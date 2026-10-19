@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JanitorHead</title>
+  <meta name="description" content="Generalist. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.">
+  <meta property="og:title" content="JanitorHead">
+  <meta property="og:description" content="Generalist. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.">
+  <meta property="og:url" content="https://janitorhead.github.io/">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="mark" aria-hidden="true">JH</p>
+      <h1>JanitorHead</h1>
+      <p class="lede">Generalist. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.</p>
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:janitorhead@icloud.com">janitorhead@icloud.com</a>
+        <a href="https://github.com/JanitorHead">GitHub</a>
+        <a href="https://www.youtube.com/@janitorhead">YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="built">
+      <h2 id="built">Things I've built</h2>
+      <div class="grid">
+        <article class="card wide">
+          <a class="shot" href="https://maptridge.pages.dev"><img src="img/mt.webp" alt="Maptridge: a Metroid (NES) map coloured by area, filled in room by room" width="1200" height="630" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="https://maptridge.pages.dev">Maptridge</a></h3>
+            <p>Interactive game maps you fill in as you play, without spoilers. The first map is Metroid (NES): one click per room, the game's real screens when you zoom in, hints before spoilers, and RetroAchievements live.</p>
+            <p class="tags">TypeScript · Canvas · Cloudflare Pages · NES ROM analysis</p>
+            <p class="more"><a href="https://maptridge.pages.dev">Open the map</a><a href="https://youtu.be/dRmrtPjImUc">Watch the video</a><a href="https://github.com/JanitorHead/maptridge-feedback">Feedback</a></p>
+          </div>
+        </article>
+
+        <article class="card wide">
+          <a class="shot top" href="https://github.com/JanitorHead/omarchy-quotatank"><img src="img/qt.webp" alt="Quotatank's Limits and Costs panels" width="1200" height="1255" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="https://github.com/JanitorHead/omarchy-quotatank">Quotatank</a></h3>
+            <p>Every AI coding limit, account and dollar in the Omarchy menu bar: how much is left, which account is spending it, and when it comes back, across 50 providers. Published and verified in the Omarchy plugin marketplace.</p>
+            <p class="tags">Python · QML · Quickshell · Hyprland</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot top" href="https://github.com/JanitorHead/unraid-topprocesses"><img src="img/tp.webp" alt="The Top Processes tile listing processes with CPU and memory bars" width="616" height="521" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="https://github.com/JanitorHead/unraid-topprocesses">Top Processes</a></h3>
+            <p>An Unraid dashboard tile that shows which processes are using the CPU and memory, in Unraid's own style.</p>
+            <p class="tags">PHP · JavaScript · Unraid</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="shot" href="https://github.com/JanitorHead/ts570d_remote"><img src="img/ts.webp" alt="A Windows app that mirrors the Kenwood TS-570D front panel" width="1024" height="435" loading="lazy"></a>
+          <div class="body">
+            <h3><a href="https://github.com/JanitorHead/ts570d_remote">TS-570D Remote</a></h3>
+            <p>A front-panel-style Windows app to control a Kenwood TS-570D radio over CAT.</p>
+            <p class="tags">C# · WPF · OmniRig · Ham radio</p>
+          </div>
+        </article>
+
+        <article class="card text">
+          <div class="body">
+            <h3><a href="https://github.com/JanitorHead/scrutiny-bridge">scrutiny-bridge</a></h3>
+            <p>Per-disk, per-attribute alert filtering for Scrutiny's SMART notifications: silence one reviewed disk without muting the channel, with readable Telegram alerts.</p>
+            <p class="tags">Python · SMART · Telegram</p>
+          </div>
+        </article>
+
+        <article class="card text">
+          <div class="body">
+            <h3><a href="https://github.com/JanitorHead/unraid-themeswitch">Theme Switch</a></h3>
+            <p>A one-click light/dark toggle in the Unraid header that can follow your operating system's colour scheme.</p>
+            <p class="tags">JavaScript · Unraid</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="upstream">
+      <h2 id="upstream">Bug hunting upstream</h2>
+      <div class="story">
+        <p>For months, Immich's OpenVINO face detection broke on Intel NAS iGPUs. Faces vanished, and the maintainers couldn't reproduce it.</p>
+        <p>I isolated the cause to dynamic shapes on that GPU and OpenVINO release, filed the upstream report with a self-contained repro (<a href="https://github.com/openvinotoolkit/openvino/issues/36831">openvino#36831</a>), and confirmed Intel's fix on the affected hardware. My test script became the basis of the community workaround until the fix shipped.</p>
+        <p class="more"><a href="https://github.com/immich-app/immich/issues/27637">The Immich thread</a><a href="https://github.com/JanitorHead/openvino-36831-repro">The repro pack</a></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="toolbox">
+      <h2 id="toolbox">Toolbox</h2>
+      <p class="toolbox">TypeScript · Python · C# / WPF · QML · PHP · Shell · Docker · Linux · Unraid · Cloudflare</p>
+    </section>
+
+    <section class="contact" aria-labelledby="contact">
+      <h2 id="contact">Get in touch</h2>
+      <p>Open to collaborations and interesting problems. Email is the best way to reach me: <a href="mailto:janitorhead@icloud.com">janitorhead@icloud.com</a></p>
+    </section>
+  </main>
+
+  <footer class="wrap"><p>© JanitorHead</p></footer>
+</body>
+</html>
