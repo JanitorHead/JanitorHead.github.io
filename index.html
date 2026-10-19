@@ -97,7 +97,7 @@
     <section aria-labelledby="upstream">
       <h2 id="upstream">Bug hunting upstream</h2>
       <div class="story">
-        <p>For months, Immich's OpenVINO face detection broke on Intel NAS iGPUs. Faces vanished, and the maintainers couldn't reproduce it.</p>
+        <p>For months, Immich's OpenVINO face detection broke on Intel NAS iGPUs. Faces vanished, and the bug was hard to reproduce.</p>
         <p>Working with Immich's maintainers, I narrowed it down to dynamic shapes on that GPU and OpenVINO release, filed the upstream report with a self-contained repro (<a href="https://github.com/openvinotoolkit/openvino/issues/36831">openvino#36831</a>), and confirmed Intel's fix on the affected hardware. My test script ended up as the basis of the community workaround until the fix shipped.</p>
         <p class="more"><a href="https://github.com/immich-app/immich/issues/27637">The Immich thread</a><a href="https://github.com/JanitorHead/openvino-36831-repro">The repro pack</a></p>
       </div>
