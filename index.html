@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JanitorHead</title>
-  <meta name="description" content="Medical student, generalist and licensed ham radio operator. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.">
+  <meta name="description" content="Medical student, generalist and licensed ham radio operator. I like taking on problems that look interesting and seeing them through, from game maps to GPU driver bugs.">
   <meta property="og:title" content="JanitorHead">
-  <meta property="og:description" content="Medical student, generalist and licensed ham radio operator. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.">
+  <meta property="og:description" content="Medical student, generalist and licensed ham radio operator. I like taking on problems that look interesting and seeing them through, from game maps to GPU driver bugs.">
   <meta property="og:url" content="https://janitorhead.github.io/">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
     <div class="wrap">
       <p class="mark" aria-hidden="true">JH</p>
       <h1>JanitorHead</h1>
-      <p class="lede">Medical student, generalist and licensed ham radio operator. I pick up whatever problem looks interesting and see it through, from game maps to GPU driver bugs.</p>
+      <p class="lede">Medical student, generalist and licensed ham radio operator. I like taking on problems that look interesting and seeing them through, from game maps to GPU driver bugs.</p>
       <nav class="links" aria-label="Contact">
         <a href="mailto:janitorhead@icloud.com">janitorhead@icloud.com</a>
         <a href="https://github.com/JanitorHead">GitHub</a>
@@ -31,7 +31,7 @@
       <h2 id="about">About me</h2>
       <p>I'm not a professional developer, just stubborn about fixing things. I started programming to solve my own problems, and it grew from there: first the tools I needed, then the ones other people needed too.</p>
       <p>Medicine is my real passion. I haven't finished the degree yet, and where medicine meets technology is where I'd most like to end up.</p>
-      <p>Away from the keyboard I repair and restore things: retro consoles and controllers, computers, CRT TVs and ham radio gear. I restored my Kenwood TS-570D HF transceiver, then wrote it an app. On the air I mostly chase DX on HF and work FT8. I also solder my own Arduino and ESP32 projects, take my medical notes with a fountain pen, and play guitar, piano and alto sax, all of them badly.</p>
+      <p>Away from the keyboard I like repairing and restoring things: retro consoles and controllers, computers, CRT TVs and ham radio gear. I restored my Kenwood TS-570D HF transceiver, then wrote it an app. On the air I mostly chase DX on HF and work FT8, and I'm slowly learning CW. I also design and build my own electronics projects. Fountain pens are another hobby, mostly for how they feel to write with, and I play guitar, piano and alto sax, all of them badly.</p>
     </section>
 
     <section aria-labelledby="built">
@@ -98,7 +98,7 @@
       <h2 id="upstream">Bug hunting upstream</h2>
       <div class="story">
         <p>For months, Immich's OpenVINO face detection broke on Intel NAS iGPUs. Faces vanished, and the maintainers couldn't reproduce it.</p>
-        <p>I isolated the cause to dynamic shapes on that GPU and OpenVINO release, filed the upstream report with a self-contained repro (<a href="https://github.com/openvinotoolkit/openvino/issues/36831">openvino#36831</a>), and confirmed Intel's fix on the affected hardware. My test script became the basis of the community workaround until the fix shipped.</p>
+        <p>Working with Immich's maintainers, I narrowed it down to dynamic shapes on that GPU and OpenVINO release, filed the upstream report with a self-contained repro (<a href="https://github.com/openvinotoolkit/openvino/issues/36831">openvino#36831</a>), and confirmed Intel's fix on the affected hardware. My test script ended up as the basis of the community workaround until the fix shipped.</p>
         <p class="more"><a href="https://github.com/immich-app/immich/issues/27637">The Immich thread</a><a href="https://github.com/JanitorHead/openvino-36831-repro">The repro pack</a></p>
       </div>
     </section>
